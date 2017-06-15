@@ -8,7 +8,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'YoungHearts') }}</title>
+    <title>YoungHearts</title>
+    <!-- <title>{{ config('app.name', 'YoungHearts') }}</title> -->
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -36,14 +37,20 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'YoungHearts') }}
+                        YoungHearts
                     </a>
 
-                    <form class="navbar-form navbar-left" role="search">
+                    <ul class="nav navbar-nav navbar-left">
+                    <li><a href="#">Circle</a></li>
+                    </ul>
+
+                    
+
+                    <form class="navbar-form navbar-left" role="search" action="{{ route('search') }}" >
                           <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search">
+                            <input type="text" name="query" class="form-control" placeholder="Search for people">
                           </div>
-                          <button type="submit" class="btn btn-default">Submit</button>
+                          <button type="submit" class="btn btn-default">Search</button>
                     </form>
 
                 </div>
