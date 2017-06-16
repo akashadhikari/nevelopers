@@ -14,6 +14,9 @@ class SearchController extends Controller
 		if(!$query) {
 			return redirect()->route('home');
 		}
+		
+		//search is based on name or username
+
 		$users= User::where("name", 'LIKE', "%{$query}%")
 		->orWhere('username', 'LIKE', "%{$query}%")
 		->get();
