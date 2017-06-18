@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use DB;
- use App\User;
+use App\User;
 use Illuminate\Http\Request;
 
 class SearchController extends Controller
