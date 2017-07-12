@@ -14,6 +14,7 @@ class ProfileController extends Controller
      * @return Response
      */
     public function getProfile($username)
+
     {
         $user=User::where('username', $username)->first();
         
@@ -23,6 +24,5 @@ class ProfileController extends Controller
 		
 		return view('user.profile')
 		->with('user', $user);
-		
     }
 }
