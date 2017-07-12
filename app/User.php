@@ -30,4 +30,8 @@ class User extends Authenticatable
     public function gravatar() {
         return "https://www.gravatar.com/avatar/{{ md5($this->email) }}?d=mm";
     }
+
+    public function coverpic() {
+         return "https://www.gravatar.com/avatar/{{ md5($this->email) }}?d=mm";
+     }
 }
