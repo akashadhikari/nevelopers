@@ -41,7 +41,7 @@
                     </a>
 
                     <ul class="nav navbar-nav navbar-left">
-                    <li><a href="#">Circle</a></li>
+                    <li><a href="{{ url('/circle') }}">Circle</a></li>
                     </ul>
 
                     
