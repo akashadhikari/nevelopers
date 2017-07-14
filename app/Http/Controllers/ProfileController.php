@@ -25,4 +25,13 @@ class ProfileController extends Controller
 		return view('user.profile')
 		->with('user', $user);
     }
+
+    public function getEdit() {
+        return view('user.update');
+    }
+
+    public function postEdit() {
+
+    }
+
 }
