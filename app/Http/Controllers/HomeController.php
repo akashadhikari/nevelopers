@@ -30,4 +30,12 @@ class HomeController extends Controller
     {
         return view('circle');
     }
+
+    public function getEdit() {
+        return view('edit');
+    }
+
+    public function postEdit() {
+
+    }
 }
