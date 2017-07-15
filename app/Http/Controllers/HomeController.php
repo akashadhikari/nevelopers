@@ -32,6 +32,7 @@ class HomeController extends Controller
     }
 
     public function getEdit() {
+
         return view('edit');
     }
 
