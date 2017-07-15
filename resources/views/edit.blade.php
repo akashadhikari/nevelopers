@@ -15,12 +15,12 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                         <label for="name" class="control-label">Full name</label>
-                                        <input type="text" name="name" class="form-control" id="name" value="">
+                                        <input type="text" name="name" class="form-control" id="name" value="{{ Auth::user()->name ?: Request::old('name') }}">
                                 </div>
 
                                 <div class="form-group">
                                         <label for="username" class="control-label">Username</label>
-                                        <input type="text" name="username" class="form-control" id="username" value="">
+                                        <input type="text" name="username" class="form-control" id="username" value="{{ Auth::user()->username ?: Request::old('username') }}">
                                 </div>
 
                             </div>
