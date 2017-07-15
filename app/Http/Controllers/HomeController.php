@@ -37,6 +37,7 @@ class HomeController extends Controller
     }
 
     public function postEdit() {
-
+        
+        return view('edit');
     }
 }
