@@ -14,8 +14,7 @@
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
-Route::get('/circle', 'HomeController@getCircle')->name('circle');
-Route::get('/edit', 'HomeController@getEdit')->name('edit');
-Route::post('/edit', 'HomeController@postEdit');
+Route::get('/edit', 'ProfileController@getEdit')->name('profile.edit');
+Route::post('/edit', 'ProfileController@postEdit');
 Route::get('/search', 'SearchController@index')->name('search');
 Route::get('/{username}', 'ProfileController@getProfile');

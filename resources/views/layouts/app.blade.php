@@ -41,8 +41,8 @@
                     </a>
 
                     <ul class="nav navbar-nav navbar-left">
-                    <li><a href="{{ url('/circle') }}">Circle</a></li>
-                    </ul>
+                    {{-- <li><a href="{{ url('/circle') }}">Circle</a></li>
+ --}}                    </ul>
 
                     
 

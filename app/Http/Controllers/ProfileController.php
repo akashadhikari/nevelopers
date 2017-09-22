@@ -26,4 +26,18 @@ class ProfileController extends Controller
 		->with('user', $user);
     }
 
+    public function getEdit() {
+
+        return view('profile.edit');
+    }
+
+    public function postEdit(Request $request) {
+        $this->validate($request, [
+            'name'=>'alpha|max:50',
+            'username'=>'alpha|max:50',
+            
+            ]);
+        dd('all ok');
+    }
+
 }

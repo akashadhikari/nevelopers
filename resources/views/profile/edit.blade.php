@@ -9,7 +9,7 @@
 
                 <div class="panel-body">
 
-                    <form class="form-vertical" role="form" method="post" action="{{ route('edit') }}">
+                    <form class="form-vertical" role="form" method="post" action="{{ route('profile.edit') }}">
 
                         <div class="row">
                             <div class="col-lg-6">
